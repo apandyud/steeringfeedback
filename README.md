@@ -15,13 +15,13 @@ In Subtask 1 we used a deep-learning segmentation model to find the edges of the
 
 The process contained the following steps: 
 
-Drive the car, and record the images of the rear-view camera, along with the emitted steering and speed PWM value. 
+- Drive the car, and record the images of the rear-view camera, along with the emitted steering and speed PWM value. 
 
-Annotate the images, marking the wheel edges as lines on the images  
+- Annotate the images, marking the wheel edges as lines on the images  
 
-Increase the variance of the gathered data using augmentation techniques, with a 1:10 ratio. 
+- Increase the variance of the gathered data using augmentation techniques, with a 1:10 ratio. 
 
-Used the dataset to train a segmentation model  
+- Use the dataset to train a segmentation model  
 
 ### Training details 
 
@@ -54,15 +54,15 @@ In Subtask 2 we do not use annotated data to train a CNN model, and we do not wa
 
 The process contained the following steps: 
 
-Drive the car, and record the images of the rear-view camera, along with the emitted steering and speed PWM value.  
+- Drive the car, and record the images of the rear-view camera, along with the emitted steering and speed PWM value.  
 
-Transform PWM values, to eliminate the difference between the steering angle of the inner and outer steering wheel during a turn (As steering is based on Ackerman geometry).  
+- Transform PWM values, to eliminate the difference between the steering angle of the inner and outer steering wheel during a turn (As steering is based on Ackerman geometry).  
 
-Normalize the PWM values to the 0-1 range, and then scale it to the range [-1,1]. 
+- Normalize the PWM values to the 0-1 range, and then scale it to the range [-1,1]. 
 
-Increase the variance of the gathered data using augmentation techniques, with a 1:10 ratio. 
+- Increase the variance of the gathered data using augmentation techniques, with a 1:10 ratio. 
 
-Used the dataset to train a regression CNN model.  
+- Use the dataset to train a regression CNN model.  
 
 ### Training details 
 
@@ -72,11 +72,13 @@ As mentioned in the main article, we used a VGG16-based CNN network to train our
 
 Layers: 
 
+![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/model_arch.png
 
 In the validation and test dataset, we did not apply augmentation to preserve the variance of the original dataset.  
 
 The graph of the training process is shown below: 
 
+![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/train2.png
 
 Model evaluation has been carried out on the test dataset. The result is as follows: 
 
