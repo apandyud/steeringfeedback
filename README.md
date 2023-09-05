@@ -37,7 +37,8 @@ We trained the model through 40 epochs.
 
 The graphs of the training process are shown below: 
 
-![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/train1.png?raw=true)
+
+![alt text](train1.png?raw=true)
 
 For the model evaluation, the test set has been used. The evaluation results are as follows: 
 
