@@ -72,13 +72,13 @@ As mentioned in the main article, we used a VGG16-based CNN network to train our
 
 Layers: 
 
-![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/model_arch.png
+![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/model_arch.png)
 
 In the validation and test dataset, we did not apply augmentation to preserve the variance of the original dataset.  
 
 The graph of the training process is shown below: 
 
-![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/train2.png
+![alt text](https://github.com/apandyud/steeringfeedback/blob/main/imgs/train2.png)
 
 Model evaluation has been carried out on the test dataset. The result is as follows: 
 
